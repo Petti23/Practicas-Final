@@ -26,8 +26,8 @@ class Alumno{
             return suma/notas.size();
         }
 
-        virtual bool aprueba();
-        virtual string tipoAlumno();
+        virtual bool aprueba() = 0;
+        virtual string tipoAlumno() = 0;
 };
 
 class Invitado : public Alumno{
